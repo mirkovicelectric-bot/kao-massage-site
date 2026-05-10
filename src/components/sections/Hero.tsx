@@ -38,7 +38,7 @@ export default function Hero() {
 
         <p className="text-white/70 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animate-delay-100">
           Experience the transformative power of authentic Thai massage therapy
-          in Cupertino's most serene wellness sanctuary.
+          in Cupertino&apos;s most serene wellness sanctuary.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animate-delay-200">
