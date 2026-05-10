@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { BOOKING_URL, PHONE, EMAIL } from '@/lib/services'
+import VagaroBookingSection from '@/components/sections/VagaroBookingSection'
+import BookingCTA from '@/components/sections/BookingCTA'
 
 export const metadata: Metadata = {
   title: 'Book a Session',
@@ -84,6 +86,8 @@ export default function BookPage() {
         </div>
       </section>
 
+      <VagaroBookingSection />
+
       {/* How it works */}
       <section className="section-gap bg-sand-50">
         <div className="container-max section-padding">
@@ -148,6 +152,8 @@ export default function BookPage() {
           </div>
         </div>
       </section>
+
+      <BookingCTA />
     </>
   )
 }
