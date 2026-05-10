@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-dm-sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-sand-50 text-sand-900 font-sans;
+  }
+
+  /* Safe area support for mobile devices */
+  .safe-pb {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .section-gap {
+    @apply py-20 lg:py-28;
+  }
+
+  .heading-display {
+    @apply font-cormorant text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-light leading-[1.05] tracking-tight;
+  }
+
+  .heading-lg {
+    @apply font-cormorant text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.1] tracking-tight;
+  }
+
+  .heading-md {
+    @apply font-cormorant text-3xl sm:text-4xl font-light leading-[1.15] tracking-tight;
+  }
+
+  .heading-sm {
+    @apply font-cormorant text-2xl sm:text-3xl font-light leading-[1.2];
+  }
+
+  .eyebrow {
+    @apply text-xs tracking-[0.2em] uppercase font-sans font-medium;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-forest-600 text-white text-sm tracking-wide font-medium rounded-none transition-all duration-200 hover:bg-forest-700 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-current text-sm tracking-wide font-medium rounded-none transition-all duration-200 hover:bg-sand-900/5 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm tracking-wide font-medium rounded-none transition-all duration-200 hover:opacity-70 active:scale-[0.98];
+  }
+
+  .divider-line {
+    @apply h-px w-16 bg-gold-400;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+}
