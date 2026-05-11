@@ -6,7 +6,6 @@ import {
   PHONE,
   EMAIL,
   BUSINESS_HOURS,
-  BOOKING_URL,
   INSTAGRAM_URL,
 } from '@/lib/services'
 import MapSection from '@/components/sections/MapSection'
@@ -102,9 +101,7 @@ export default function ContactPage() {
                 @kaothaimassage
               </a>
               <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/book"
                 className="btn-primary text-xs px-5 py-2.5"
               >
                 Book Online
@@ -150,12 +147,10 @@ export default function ContactPage() {
           {/* Direct booking prompt */}
           <div className="text-center mt-14">
             <p className="text-sand-600 mb-4 text-sm">
-              Ready to book? Reserve your session instantly through Vagaro.
+              Ready to book? Submit a request and we&apos;ll confirm your session.
             </p>
             <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/book"
               className="btn-primary py-4 px-10"
             >
               Book Your Session

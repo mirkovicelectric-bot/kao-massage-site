@@ -137,7 +137,7 @@ export default function AboutPage() {
                   'Customized pressure and focus for every individual',
                   'Private, serene studio environment',
                   'Premium oils, stones, and therapeutic materials',
-                  'Flexible booking via Vagaro — online, anytime',
+                  'Easy online booking requests — we confirm within one business day',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sand-700 text-sm">
                     <svg
