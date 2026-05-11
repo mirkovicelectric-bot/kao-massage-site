@@ -22,7 +22,7 @@ export default function ServicesPage() {
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=70')",
+              "url('/room-towels.jpg')",
           }}
           aria-hidden="true"
         />

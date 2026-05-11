@@ -43,7 +43,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1600&q=70')",
+              "url('/front-door.jpeg')",
           }}
           aria-hidden="true"
         />
@@ -62,7 +62,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             <div className="relative h-80 lg:h-[540px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80"
+                src="/hall-front.jpeg"
                 alt="Serene spa interior at Kao Thai Massage"
                 fill
                 className="object-cover"
@@ -161,8 +161,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-80 lg:h-[480px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&q=80"
-                alt="Hot stone massage at Kao Thai Massage"
+                src="/studio-door.jpeg"
+                alt="Studio entrance at Kao Thai Massage"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -8,7 +8,7 @@ export default function BookingCTA() {
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1200&q=60')",
+            "url('/room-candles.jpeg')",
         }}
         aria-hidden="true"
       />

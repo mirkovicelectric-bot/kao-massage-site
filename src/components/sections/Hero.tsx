@@ -8,7 +8,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1920&q=85')",
+            "url('/room-candles.jpeg')",
         }}
         aria-hidden="true"
       />

@@ -65,7 +65,7 @@ export default function BookPage() {
           className="absolute inset-0 bg-cover bg-center opacity-15"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=60')",
+              "url('/room.jpeg')",
           }}
           aria-hidden="true"
         />
