@@ -22,7 +22,7 @@ export default function ServicesPage() {
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
             backgroundImage:
-              "url('/room-towels.jpg')",
+              "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=70&auto=format&fit=crop')",
           }}
           aria-hidden="true"
         />
@@ -52,7 +52,7 @@ export default function ServicesPage() {
                 <div className={`relative h-72 lg:h-96 overflow-hidden ${index % 2 === 1 ? 'lg:[direction:ltr]' : ''}`}>
                   <Image
                     src={service.image}
-                    alt={service.name}
+                    alt={service.imageAlt}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"

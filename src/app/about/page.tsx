@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import BookingCTA from '@/components/sections/BookingCTA'
+import StudioGallery from '@/components/sections/StudioGallery'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -43,7 +44,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
             backgroundImage:
-              "url('/front-door.jpeg')",
+              "url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1600&q=70&auto=format&fit=crop')",
           }}
           aria-hidden="true"
         />
@@ -63,7 +64,7 @@ export default function AboutPage() {
             <div className="relative h-80 lg:h-[540px] overflow-hidden">
               <Image
                 src="/hall-front.jpeg"
-                alt="Serene spa interior at Kao Thai Massage"
+                alt="Welcoming hallway inside Kao Thai Massage studio at Sola Salon Studios, Cupertino"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -162,7 +163,7 @@ export default function AboutPage() {
             <div className="relative h-80 lg:h-[480px] overflow-hidden">
               <Image
                 src="/studio-door.jpeg"
-                alt="Studio entrance at Kao Thai Massage"
+                alt="Private studio entrance at Kao Thai Massage inside Sola Salon Studios, Cupertino"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -173,6 +174,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <StudioGallery />
       <BookingCTA />
     </>
   )

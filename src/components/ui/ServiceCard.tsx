@@ -18,7 +18,7 @@ export default function ServiceCard({ service, compact = false }: ServiceCardPro
       <div className={`relative overflow-hidden ${compact ? 'h-48' : 'h-64'}`}>
         <Image
           src={service.image}
-          alt={service.name}
+          alt={service.imageAlt}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

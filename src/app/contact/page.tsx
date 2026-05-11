@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import {
   ADDRESS,
   CITY_STATE_ZIP,
@@ -108,6 +109,23 @@ export default function ContactPage() {
               >
                 Book Online
               </a>
+            </div>
+          </div>
+
+          {/* Studio location photo */}
+          <div className="max-w-5xl mx-auto mt-12 relative h-56 sm:h-72 overflow-hidden">
+            <Image
+              src="/building-sola.jpeg"
+              alt="Sola Salon Studios building at 20540 Stevens Creek Blvd, Cupertino — home of Kao Thai Massage"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              unoptimized
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            <div className="absolute bottom-5 left-6">
+              <p className="text-white/90 text-sm font-medium tracking-wide">Sola Salon Studios · Studio 26</p>
+              <p className="text-white/60 text-xs mt-0.5">20540 Stevens Creek Blvd, Cupertino</p>
             </div>
           </div>
 

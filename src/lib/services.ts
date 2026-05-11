@@ -10,6 +10,7 @@ export interface Service {
   description: string
   longDescription: string
   image: string
+  imageAlt: string
   durations: ServiceDuration[]
   featured?: boolean
   tag?: string
@@ -46,7 +47,8 @@ export const services: Service[] = [
     shortName: 'Thai Massage',
     description: 'A therapeutic art combining acupressure, assisted stretching, and energy work along the body\'s natural healing pathways.',
     longDescription: 'Rooted in ancient Ayurvedic healing traditions, Traditional Thai Massage works along the body\'s energy meridians — known as "Sen" lines — to release tension, improve flexibility, and restore energetic flow. Performed fully clothed on a floor mat, this technique uses rhythmic pressure, joint mobilization, and assisted yoga-like stretches to create a deeply restorative experience unlike any other massage modality.',
-    image: '/room.jpeg',
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Therapist performing traditional Thai stretching and acupressure massage',
     featured: true,
     tag: 'Most Popular',
     durations: [
@@ -61,7 +63,8 @@ export const services: Service[] = [
     shortName: 'Thai Combination',
     description: 'The best of both worlds — blending traditional Thai techniques with Western massage for total body balance.',
     longDescription: 'Our Thai Combination Massage artfully merges the stretching and pressure-point work of Traditional Thai Massage with the smooth flowing strokes of Swedish relaxation. This balanced approach addresses muscular tension while simultaneously promoting deep calm, making it an ideal choice for those who want both therapeutic and relaxation benefits in a single session.',
-    image: '/room-candles.jpeg',
+    image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Calming bodywork session blending Thai and Western massage techniques',
     featured: true,
     durations: [
       { duration: '60 min', price: 105 },
@@ -75,7 +78,8 @@ export const services: Service[] = [
     shortName: 'Deep Tissue',
     description: 'Targeted therapeutic work reaching deep muscle layers to dissolve chronic tension and restore mobility.',
     longDescription: 'Our Deep Tissue Massage uses firm, deliberate pressure and slow strokes to reach the deeper layers of muscle and connective tissue. Especially beneficial for chronic pain, postural issues, and areas of persistent tightness, this treatment goes beyond surface relaxation to create lasting relief. Our therapists are trained to listen to your body, adjusting pressure and technique to meet your specific therapeutic needs.',
-    image: '/room-towels.jpg',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Therapist applying targeted deep pressure to relieve chronic muscle tension',
     featured: true,
     durations: [
       { duration: '60 min', price: 120 },
@@ -89,7 +93,8 @@ export const services: Service[] = [
     shortName: 'Swedish',
     description: 'The classic full-body relaxation massage, using gentle flowing strokes to melt away stress and tension.',
     longDescription: 'Our Swedish Relaxation Massage uses long, gliding strokes, light kneading, and rhythmic tapping to promote deep relaxation throughout the entire body. This gentle yet effective modality improves circulation, eases muscle tension, and activates the parasympathetic nervous system — leaving you in a state of profound calm. Ideal for first-time massage clients or those simply seeking restorative rest.',
-    image: '/room.jpeg',
+    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Relaxing Swedish massage with long gliding strokes on a spa table',
     durations: [
       { duration: '60 min', price: 105 },
       { duration: '90 min', price: 155 },
@@ -102,7 +107,8 @@ export const services: Service[] = [
     shortName: 'Aromatherapy',
     description: 'Swedish massage elevated with therapeutic essential oils, chosen to balance mind, body, and spirit.',
     longDescription: 'Aromatherapy Massage combines the healing power of touch with the science of plant-based essential oils. Our therapists select from a curated collection of premium oils — including lavender, eucalyptus, and lemongrass — to craft a sensory experience tailored to your needs. Whether you seek stress relief, immune support, or emotional balance, the oils are blended and applied to create a truly holistic healing session.',
-    image: '/room-candles.jpeg',
+    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Therapeutic essential oils and calming aromatherapy massage setup',
     durations: [
       { duration: '60 min', price: 115 },
       { duration: '90 min', price: 165 },
@@ -115,7 +121,8 @@ export const services: Service[] = [
     shortName: 'Hot Stone',
     description: 'Smooth heated basalt stones melt tension from the deepest muscles for an extraordinary therapeutic experience.',
     longDescription: 'Hot Stone Massage uses polished, heated basalt stones placed on key energy centers of the body and incorporated directly into the massage strokes. The penetrating heat loosens tight muscles, improves circulation, and allows our therapists to work more deeply with less pressure. The result is a profoundly relaxing and therapeutic experience that addresses both physical tension and energetic imbalance.',
-    image: '/room-candles.jpeg',
+    image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Smooth heated basalt stones arranged for hot stone massage therapy',
     tag: 'Signature',
     durations: [
       { duration: '60 min', price: 130 },
@@ -129,7 +136,8 @@ export const services: Service[] = [
     shortName: 'Foot Reflexology',
     description: 'A precise pressure-point therapy on the feet that promotes healing and balance throughout the entire body.',
     longDescription: 'Foot Reflexology is based on the principle that specific points on the feet correspond to organs and systems throughout the body. By applying precise pressure to these reflex points, our therapists stimulate the body\'s natural healing processes, reduce stress, and restore energetic balance. A wonderful standalone treatment or complement to any full-body massage.',
-    image: '/room-towels.jpg',
+    image: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Foot reflexology massage applying precise pressure to reflex points',
     durations: [
       { duration: '30 min', price: 60 },
       { duration: '60 min', price: 95 },
@@ -141,7 +149,8 @@ export const services: Service[] = [
     shortName: 'HNS Relief',
     description: 'Targeted relief for the areas most affected by stress, screen time, and modern life.',
     longDescription: 'Our Head, Neck & Shoulder treatment is a focused, therapeutic session designed to address the most common areas of tension in modern life. Using a combination of acupressure, stretching, and targeted massage techniques, this session releases the compression and tightness that accumulates from long hours at a desk, poor posture, or stress. An excellent express option for those short on time but in need of real relief.',
-    image: '/room.jpeg',
+    image: 'https://images.unsplash.com/photo-1611073615830-9b77e65fd3de?w=800&q=80&auto=format&fit=crop',
+    imageAlt: 'Therapist providing targeted relief to head, neck and shoulder muscles',
     durations: [
       { duration: '30 min', price: 65 },
     ],
