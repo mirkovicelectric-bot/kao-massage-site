@@ -1,5 +1,3 @@
-import { BOOKING_URL } from '@/lib/services'
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -43,9 +41,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animate-delay-200">
           <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book"
             className="btn-primary py-4 px-9 text-base w-full sm:w-auto"
           >
             Book Your Session

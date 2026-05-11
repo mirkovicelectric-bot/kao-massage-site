@@ -1,5 +1,3 @@
-import { BOOKING_URL } from '@/lib/services'
-
 export default function BookingCTA() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden bg-sand-900">
@@ -28,14 +26,12 @@ export default function BookingCTA() {
           </h2>
 
           <p className="text-sand-300 text-lg font-light leading-relaxed mb-10">
-            Book online in minutes through Vagaro. Choose your treatment,
-            duration, and therapist — then simply arrive and let go.
+            Submit a quick booking request and we will confirm your session.
+            Choose your treatment, preferred time, and let us handle the rest.
           </p>
 
           <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book"
             className="btn-primary py-4 px-12 text-base inline-block"
           >
             Book Now

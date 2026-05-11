@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { BOOKING_URL, PHONE, EMAIL } from '@/lib/services'
-import VagaroBookingSection from '@/components/sections/VagaroBookingSection'
-import BookingCTA from '@/components/sections/BookingCTA'
+import { PHONE, EMAIL } from '@/lib/services'
+import BookingRequestForm from '@/components/sections/BookingRequestForm'
 
 export const metadata: Metadata = {
   title: 'Book a Session',
   description:
-    'Book your Thai massage session at Kao Thai Massage in Cupertino, CA. Online booking available 24/7 through Vagaro.',
+    'Request a Thai massage appointment at Kao Thai Massage in Cupertino, CA. Fill out our booking request form and we will confirm your session.',
   alternates: {
     canonical: 'https://kaomassage.com/book',
   },
@@ -15,21 +14,21 @@ export const metadata: Metadata = {
 const steps = [
   {
     number: '01',
-    title: 'Choose your treatment',
+    title: 'Submit your request',
     description:
-      'Browse our full menu of services and select the massage type and duration that fits your needs.',
+      'Fill out the form with your preferred service, date, and time. It only takes a minute.',
   },
   {
     number: '02',
-    title: 'Pick your time',
+    title: 'We confirm availability',
     description:
-      'Select from available appointment slots that work with your schedule — any day of the week.',
+      'We will reach out by phone or email within one business day to confirm your appointment.',
   },
   {
     number: '03',
-    title: 'Confirm & arrive',
+    title: 'Arrive and let go',
     description:
-      'You\'ll receive a confirmation. Arrive 5 minutes early, and leave the rest to us.',
+      'Come 5 minutes early, leave your stress at the door, and let the healing begin.',
   },
 ]
 
@@ -48,7 +47,7 @@ const faqs = [
   },
   {
     q: 'Can I add enhancements at the time of my session?',
-    a: 'Yes — our CBD, Hot Stone, and Aromatherapy add-ons can be requested when you arrive, subject to availability. We recommend mentioning your preference at the time of booking to ensure everything is prepared for you.',
+    a: 'Yes — our CBD, Hot Stone, and Aromatherapy add-ons can be requested when you arrive, subject to availability. We recommend mentioning your preference in the notes field when requesting your booking.',
   },
   {
     q: 'Is gratuity included?',
@@ -63,30 +62,52 @@ export default function BookPage() {
       <section className="pt-32 pb-16 bg-sand-900 relative overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-15"
-          style={{
-            backgroundImage:
-              "url('/room.jpeg')",
-          }}
+          style={{ backgroundImage: "url('/room.jpeg')" }}
           aria-hidden="true"
         />
         <div className="relative z-10 container-max section-padding text-center">
           <p className="eyebrow text-gold-400 mb-4">Reserve Your Visit</p>
           <h1 className="heading-lg text-white mb-4">Book a Session</h1>
-          <p className="text-sand-300 text-lg font-light max-w-xl mx-auto mb-10">
-            Scheduling is easy and instant through Vagaro. Your next moment of calm is just a few clicks away.
+          <p className="text-sand-300 text-lg font-light max-w-xl mx-auto">
+            Submit a request and we will reach out to confirm your appointment.
+            No payment required.
           </p>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary py-4 px-12 text-base"
-          >
-            Book Now on Vagaro
-          </a>
         </div>
       </section>
 
-      <VagaroBookingSection />
+      {/* Form section */}
+      <section className="section-gap bg-white" id="booking-form">
+        <div className="container-max section-padding">
+          <BookingRequestForm />
+        </div>
+      </section>
+
+      {/* Alternative contact strip */}
+      <section className="py-10 bg-sand-50 border-y border-sand-100">
+        <div className="container-max section-padding text-center">
+          <p className="text-sand-500 text-sm mb-4">
+            Prefer to reach us directly? We&apos;re available by phone or text.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+            <a
+              href={`tel:${PHONE}`}
+              className="flex items-center gap-2 text-forest-600 hover:text-forest-700 font-medium transition-colors text-base"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M13.3 10.7c-.4-.4-1-.4-1.4 0l-1 1c-.7-.4-2.1-1.4-3.4-2.7C6.2 7.7 5.2 6.3 4.8 5.6l1-1c.4-.4.4-1 0-1.4L4.4 1.8C4 1.4 3.4 1.4 3 1.8l-.8.8C1.8 3 1.5 3.6 1.5 4.2c0 4 4.3 8.3 8.3 8.3.6 0 1.2-.3 1.6-.7l.8-.8c.4-.4.4-1 0-1.3h.1z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Call or text {PHONE}
+            </a>
+            <span className="hidden sm:inline text-sand-300">·</span>
+            <a
+              href={`mailto:${EMAIL}`}
+              className="text-forest-600 hover:text-forest-700 font-medium transition-colors text-base"
+            >
+              {EMAIL}
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* How it works */}
       <section className="section-gap bg-sand-50">
@@ -109,13 +130,8 @@ export default function BookPage() {
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary py-4 px-10"
-            >
-              Book Your Session
+            <a href="#booking-form" className="btn-primary py-4 px-10">
+              Fill Out the Form
             </a>
           </div>
         </div>
@@ -152,8 +168,6 @@ export default function BookPage() {
           </div>
         </div>
       </section>
-
-      <BookingCTA />
     </>
   )
 }

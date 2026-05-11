@@ -69,6 +69,10 @@
     @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm tracking-wide font-medium rounded-none transition-all duration-200 hover:opacity-70 active:scale-[0.98];
   }
 
+  .form-input {
+    @apply w-full border border-sand-200 bg-white px-4 py-3 text-sand-900 text-sm placeholder:text-sand-400 focus:outline-none focus:border-forest-500 focus:ring-1 focus:ring-forest-500 transition-colors duration-150;
+  }
+
   .divider-line {
     @apply h-px w-16 bg-gold-400;
   }

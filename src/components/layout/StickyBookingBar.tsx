@@ -1,12 +1,8 @@
-import { BOOKING_URL } from '@/lib/services'
-
 export default function StickyBookingBar() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-forest-700 safe-pb">
       <a
-        href={BOOKING_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/book"
         className="flex items-center justify-center gap-3 py-4 text-white font-sans font-medium text-sm tracking-wide"
       >
         <span>Book Your Session</span>
