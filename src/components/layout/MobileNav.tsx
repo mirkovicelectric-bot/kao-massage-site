@@ -2,8 +2,6 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
-import { BOOKING_URL } from '@/lib/services'
-
 interface NavLink {
   href: string
   label: string
@@ -86,9 +84,7 @@ export default function MobileNav({ isOpen, onClose, navLinks }: MobileNavProps)
         {/* Book CTA */}
         <div className="px-6 pb-8 pt-4 border-t border-sand-200">
           <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book"
             onClick={onClose}
             className="btn-primary w-full justify-center text-base py-4"
           >

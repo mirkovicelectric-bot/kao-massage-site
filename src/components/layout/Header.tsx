@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import MobileNav from './MobileNav'
-import { BOOKING_URL } from '@/lib/services'
-
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
@@ -76,9 +74,7 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/book"
                 className="btn-primary py-2.5 px-6 text-xs"
               >
                 Book Now
