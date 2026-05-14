@@ -25,7 +25,7 @@ export interface Addon {
 }
 
 export const BOOKING_URL = 'https://www.vagaro.com/placeholder'
-export const PHONE = '(408) 250-9525'
+export const PHONE = '1 (408) 966-3188'
 export const EMAIL = 'bookings@kaomassage.com'
 export const ADDRESS = '20540 Stevens Creek Blvd Studio 26'
 export const CITY_STATE_ZIP = 'Cupertino, CA 95014'
