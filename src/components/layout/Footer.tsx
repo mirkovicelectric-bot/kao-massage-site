@@ -131,7 +131,15 @@ export default function Footer() {
             © {currentYear} Kao Thai Wellness. All rights reserved.
           </p>
           <p className="text-sand-600 text-xs">
-            {ADDRESS}, {CITY_STATE_ZIP}
+            Site by{' '}
+            <a
+              href="https://visionsf.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sand-400 hover:text-white transition-colors"
+            >
+              VisionSF
+            </a>
           </p>
         </div>
       </div>
