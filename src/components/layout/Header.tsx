@@ -52,7 +52,7 @@ export default function Header() {
                 width={1536}
                 height={1024}
                 priority
-                className={`h-24 w-auto transition-all duration-300 ${onLightBg ? '' : 'brightness-0 invert'}`}
+                className="h-24 w-auto transition-all duration-300"
               />
             </Link>
 
