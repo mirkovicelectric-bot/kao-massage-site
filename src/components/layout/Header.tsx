@@ -47,20 +47,20 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center group" aria-label="Kao Thai Wellness — Home">
               <Image
-                src="/logo-updated.PNG"
+                src="/logo-updated.png"
                 alt="Kao Thai Wellness"
-                width={1536}
-                height={1024}
+                width={579}
+                height={567}
                 priority
                 className="h-24 w-auto transition-all duration-300"
               />
               <span
-                className={`font-cormorant transition-colors duration-300 ${
+                className={`ml-3 font-cormorant transition-colors duration-300 ${
                   onLightBg ? 'text-sand-900' : 'text-sand-50'
                 }`}
                 aria-hidden="true"
               >
-                <span className="md:hidden text-xl tracking-[0.25em]">KAO</span>
+                <span className="md:hidden text-xl tracking-[0.18em]">KAO</span>
                 <span className="hidden md:inline text-2xl tracking-wide">Kao Thai Wellness</span>
               </span>
             </Link>
