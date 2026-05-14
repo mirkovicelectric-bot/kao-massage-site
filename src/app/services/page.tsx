@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { services, addons, BOOKING_URL } from '@/lib/services'
 import PriceTable from '@/components/ui/PriceTable'
 import BookingCTA from '@/components/sections/BookingCTA'
@@ -74,13 +75,33 @@ export default function ServicesPage() {
                   <p className="text-sand-500 leading-relaxed mb-6 text-sm">
                     {service.longDescription}
                   </p>
-                  <div className="mb-6">
-                    <p className="eyebrow text-sand-500 mb-3">Pricing</p>
-                    <PriceTable
-                      durations={service.durations}
-                      serviceName={service.name}
-                    />
-                  </div>
+                  {service.detailHref ? (
+                    <div className="flex flex-wrap items-center gap-5">
+                      {service.startingPrice !== undefined && (
+                        <div>
+                          <span className="eyebrow text-sand-500">From</span>
+                          <p className="font-cormorant text-3xl text-sand-900 leading-none mt-1">
+                            ${service.startingPrice}
+                          </p>
+                        </div>
+                      )}
+                      <Link
+                        href={service.detailHref}
+                        className="btn-primary py-3 px-7 text-xs"
+                        aria-label={`Learn more about ${service.name}`}
+                      >
+                        Learn More
+                      </Link>
+                    </div>
+                  ) : (
+                    <div className="mb-6">
+                      <p className="eyebrow text-sand-500 mb-3">Pricing</p>
+                      <PriceTable
+                        durations={service.durations}
+                        serviceName={service.name}
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

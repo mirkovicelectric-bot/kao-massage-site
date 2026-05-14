@@ -14,6 +14,8 @@ export interface Service {
   durations: ServiceDuration[]
   featured?: boolean
   tag?: string
+  detailHref?: string
+  startingPrice?: number
 }
 
 export interface Addon {
@@ -142,6 +144,19 @@ export const services: Service[] = [
       { duration: '30 min', price: 60 },
       { duration: '60 min', price: 95 },
     ],
+  },
+  {
+    id: 'cryo-t-shock',
+    name: 'Cryo T-Shock',
+    shortName: 'Cryo T-Shock',
+    description: 'Italian-engineered thermal therapy for body contouring, cellulite reduction, and skin rejuvenation — no needles, no downtime.',
+    longDescription: 'Cryo T-Shock alternates warm and cold cycles on targeted areas of the body or face to trigger fat-cell apoptosis, tighten skin, smooth cellulite, and brighten the complexion. Each protocol is customized to your goals, with best results across a series of 5–10 sessions.',
+    image: '/cryo-hero.jpg',
+    imageAlt: 'Cryo T-Shock thermal therapy device applied to the abdomen during a contouring session',
+    tag: 'New',
+    detailHref: '/cryo-t-shock',
+    startingPrice: 300,
+    durations: [],
   },
   {
     id: 'head-neck-shoulder',

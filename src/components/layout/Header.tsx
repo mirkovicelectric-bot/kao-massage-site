@@ -8,7 +8,6 @@ import MobileNav from './MobileNav'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
-  { href: '/cryo-t-shock', label: 'Cryo T Shock' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ]
