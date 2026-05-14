@@ -47,10 +47,10 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center group" aria-label="Kao Thai Wellness — Home">
               <Image
-                src="/logo-simple.png"
+                src="/logo-horizontal.png"
                 alt="Kao Thai Wellness"
-                width={1254}
-                height={1254}
+                width={1536}
+                height={1024}
                 priority
                 className={`h-20 w-auto transition-all duration-300 ${onLightBg ? '' : 'brightness-0 invert'}`}
               />
