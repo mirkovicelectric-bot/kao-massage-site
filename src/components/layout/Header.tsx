@@ -38,8 +38,8 @@ export default function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled || !isHomePage
-            ? 'bg-sand-50/95 backdrop-blur-md border-b border-sand-200 py-4'
-            : 'bg-transparent py-6'
+            ? 'bg-sand-50/95 backdrop-blur-md border-b border-sand-200 py-2'
+            : 'bg-transparent py-4'
         }`}
       >
         <div className="container-max section-padding">
@@ -47,7 +47,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center group" aria-label="Kao Thai Wellness — Home">
               <Image
-                src="/logo-horizontal.png"
+                src="/logo-updated.PNG"
                 alt="Kao Thai Wellness"
                 width={1536}
                 height={1024}
