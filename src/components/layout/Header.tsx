@@ -52,7 +52,7 @@ export default function Header() {
                 width={579}
                 height={567}
                 priority
-                className="h-24 w-auto transition-all duration-300"
+                className="h-16 w-auto transition-all duration-300"
               />
               <span
                 className={`ml-3 font-cormorant transition-colors duration-300 ${
