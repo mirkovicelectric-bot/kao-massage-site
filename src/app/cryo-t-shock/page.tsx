@@ -73,11 +73,31 @@ const treatments = [
   },
 ]
 
-// TODO: confirm final pricing with owner
-const pricingRows = [
-  { label: 'Single session', price: '$300' },
-  { label: 'Package of 5', price: '$1,400' },
-  { label: 'Package of 10', price: '$2,700' },
+const pricingTiers = [
+  {
+    label: 'Single Session',
+    price: '$350',
+    description:
+      'Experience Cryo T-Shock and find out whether this treatment is right for you. Fast results are achieved in facial treatments, while cellulite and fat loss require multiple sessions. Full credit applied toward a package upgrade.',
+  },
+  {
+    label: '5 Sessions',
+    price: '$1,750',
+    description:
+      'For fat and cellulite reduction, 5 visits over a 10-week span yield effective results. Cryo Slimming induces apoptosis only in fat cells to gently and gradually reduce the fat layer while preserving surrounding tissue.',
+  },
+  {
+    label: '10 Sessions',
+    price: '$3,500',
+    description:
+      'Multiple treatments can be divided so different areas are targeted in a single visit — for example, abdomen for fat loss and face for anti-aging. Your program is determined during the initial consultation.',
+  },
+  {
+    label: 'Massage & Cryotherapy Package · 2 hr',
+    price: '$425',
+    description:
+      'We target your desired area with localized cryotherapy for fat loss or cellulite smoothing. A 60-minute Lymphatic Drainage Massage enhances the treatment and provides a deeply relaxing experience.',
+  },
 ]
 
 const relatedSlugs = ['hot-stone', 'aromatherapy', 'deep-tissue']
@@ -228,36 +248,40 @@ export default function CryoTShockPage() {
 
       {/* Pricing */}
       <section className="section-gap bg-sand-50">
-        <div className="max-w-2xl mx-auto section-padding">
-          <div className="mb-10">
+        <div className="container-max section-padding">
+          <div className="mb-12 max-w-2xl">
             <p className="eyebrow text-forest-600 mb-3">Pricing</p>
-            <h2 className="heading-sm text-sand-900">Book Your Session</h2>
+            <h2 className="heading-sm text-sand-900 mb-4">Book Your Session</h2>
+            <p className="text-sand-500 text-sm leading-relaxed">
+              Choose the package that fits your goals. Best results are
+              typically achieved across a series of sessions.
+            </p>
           </div>
-          <div className="divide-y divide-sand-200 border-y border-sand-200">
-            {pricingRows.map((row) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl">
+            {pricingTiers.map((tier) => (
               <div
-                key={row.label}
-                className="flex items-center justify-between gap-4 py-5"
+                key={tier.label}
+                className="bg-white border border-sand-200 p-7 flex flex-col"
               >
-                <span className="text-sm text-sand-700">{row.label}</span>
-                <div className="flex items-center gap-5 flex-shrink-0">
-                  <span className="font-cormorant text-2xl text-sand-900 tabular-nums">
-                    {row.price}
-                  </span>
-                  <Link
-                    href="/book"
-                    aria-label={`Book Cryo T-Shock — ${row.label}`}
-                    className="text-xs eyebrow text-forest-600 border border-forest-200 px-3 py-1.5 hover:bg-forest-600 hover:text-white hover:border-forest-600 transition-all duration-200"
-                  >
-                    Book
-                  </Link>
-                </div>
+                <h3 className="font-cormorant text-2xl text-sand-900 leading-snug mb-2">
+                  {tier.label}
+                </h3>
+                <p className="font-cormorant text-4xl text-sand-900 tabular-nums mb-4">
+                  {tier.price}
+                </p>
+                <p className="text-sand-600 text-sm leading-relaxed mb-6 flex-1">
+                  {tier.description}
+                </p>
+                <Link
+                  href="/book"
+                  aria-label={`Book Cryo T-Shock — ${tier.label}`}
+                  className="btn-primary py-3 px-6 text-xs self-start"
+                >
+                  Book
+                </Link>
               </div>
             ))}
           </div>
-          <p className="text-xs text-sand-500 mt-6">
-            Pricing is preliminary and may be adjusted at your consultation.
-          </p>
         </div>
       </section>
 

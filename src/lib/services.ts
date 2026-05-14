@@ -155,7 +155,7 @@ export const services: Service[] = [
     imageAlt: 'Cryo T-Shock thermal therapy device applied to the abdomen during a contouring session',
     tag: 'New',
     detailHref: '/cryo-t-shock',
-    startingPrice: 300,
+    startingPrice: 350,
     durations: [],
   },
   {
