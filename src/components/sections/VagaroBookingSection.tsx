@@ -30,7 +30,7 @@ function LiveState() {
         {/* Branded header strip */}
         <div className="bg-forest-700 px-8 py-5 flex items-center justify-between">
           <div>
-            <p className="text-white font-cormorant text-xl font-medium">Kao Thai Massage</p>
+            <p className="text-white font-cormorant text-xl font-medium">Kao Thai Wellness</p>
             <p className="text-forest-200/60 text-xs tracking-wide mt-0.5">
               Cupertino, CA · Vagaro Booking
             </p>
@@ -107,7 +107,7 @@ function PlaceholderState() {
         {/* Header strip */}
         <div className="bg-sand-200 px-8 py-5 flex items-center justify-between">
           <div>
-            <p className="text-sand-700 font-cormorant text-xl font-medium">Kao Thai Massage</p>
+            <p className="text-sand-700 font-cormorant text-xl font-medium">Kao Thai Wellness</p>
             <p className="text-sand-500 text-xs tracking-wide mt-0.5">
               Vagaro Booking · Not yet configured
             </p>

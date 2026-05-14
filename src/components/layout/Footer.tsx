@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   BOOKING_URL,
   PHONE,
@@ -27,9 +28,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
-              <p className="font-cormorant text-3xl font-semibold tracking-[0.15em] text-white">KAO</p>
-              <p className="text-[10px] tracking-[0.25em] uppercase text-sand-400 mt-0.5">Thai Massage</p>
+            <Link href="/" className="inline-block mb-4" aria-label="Kao Thai Wellness — Home">
+              <Image
+                src="/logo-mark.png"
+                alt="Kao Thai Wellness"
+                width={586}
+                height={366}
+                className="h-14 w-auto brightness-0 invert opacity-90"
+              />
             </Link>
             <p className="text-sand-400 text-sm leading-relaxed mt-4 max-w-xs">
               Ancient healing traditions, refined for modern life. Your sanctuary of calm in Cupertino.
@@ -122,7 +128,7 @@ export default function Footer() {
       <div className="border-t border-sand-800">
         <div className="container-max section-padding py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sand-500 text-xs tracking-wide">
-            © {currentYear} Kao Thai Massage. All rights reserved.
+            © {currentYear} Kao Thai Wellness. All rights reserved.
           </p>
           <p className="text-sand-600 text-xs">
             {ADDRESS}, {CITY_STATE_ZIP}

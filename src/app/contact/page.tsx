@@ -13,7 +13,7 @@ import MapSection from '@/components/sections/MapSection'
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Get in touch with Kao Thai Massage in Cupertino, CA. Find our address, hours, phone, email, and directions. Book online or contact us directly.',
+    'Get in touch with Kao Thai Wellness in Cupertino, CA. Find our address, hours, phone, email, and directions. Book online or contact us directly.',
   alternates: {
     canonical: 'https://kaomassage.com/contact',
   },
@@ -113,7 +113,7 @@ export default function ContactPage() {
           <div className="max-w-5xl mx-auto mt-12 relative h-56 sm:h-72 overflow-hidden">
             <Image
               src="/building-sola.jpeg"
-              alt="Sola Salon Studios building at 20540 Stevens Creek Blvd, Cupertino — home of Kao Thai Massage"
+              alt="Sola Salon Studios building at 20540 Stevens Creek Blvd, Cupertino — home of Kao Thai Wellness"
               fill
               className="object-cover"
               sizes="(max-width: 1280px) 100vw, 1280px"

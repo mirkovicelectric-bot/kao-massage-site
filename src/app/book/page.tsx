@@ -5,7 +5,7 @@ import BookingRequestForm from '@/components/sections/BookingRequestForm'
 export const metadata: Metadata = {
   title: 'Book a Session',
   description:
-    'Request a Thai massage appointment at Kao Thai Massage in Cupertino, CA. Fill out our booking request form and we will confirm your session.',
+    'Request a Thai massage appointment at Kao Thai Wellness in Cupertino, CA. Fill out our booking request form and we will confirm your session.',
   alternates: {
     canonical: 'https://kaomassage.com/book',
   },

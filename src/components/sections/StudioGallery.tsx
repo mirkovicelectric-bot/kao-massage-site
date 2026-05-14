@@ -3,7 +3,7 @@ import Image from 'next/image'
 const photos = [
   {
     src: '/room-candles.jpeg',
-    alt: 'Candlelit treatment room at Kao Thai Massage — warm, serene ambiance',
+    alt: 'Candlelit treatment room at Kao Thai Wellness — warm, serene ambiance',
   },
   {
     src: '/room-towels.jpg',
@@ -11,7 +11,7 @@ const photos = [
   },
   {
     src: '/room.jpeg',
-    alt: 'Clean and calm private treatment room at Kao Thai Massage',
+    alt: 'Clean and calm private treatment room at Kao Thai Wellness',
   },
 ]
 

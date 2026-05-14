@@ -8,9 +8,9 @@ import BookingCTA from '@/components/sections/BookingCTA'
 import MapSection from '@/components/sections/MapSection'
 
 export const metadata: Metadata = {
-  title: 'Kao Thai Massage | Authentic Thai Massage in Cupertino, CA',
+  title: 'Kao Thai Wellness | Authentic Thai Massage in Cupertino, CA',
   description:
-    'Experience authentic Thai massage, deep tissue, hot stone, and wellness therapies at Kao Thai Massage in Cupertino, California. Book online today.',
+    'Experience authentic Thai massage, deep tissue, hot stone, and wellness therapies at Kao Thai Wellness in Cupertino, California. Book online today.',
   alternates: {
     canonical: 'https://kaomassage.com',
   },

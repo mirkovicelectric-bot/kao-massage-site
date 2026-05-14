@@ -70,7 +70,7 @@ Notes: ${form.notes || 'None'}
 ---
 Submitted via kaomassage.com`
 
-    const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent('Kao Thai Massage Booking Request')}&body=${encodeURIComponent(body)}`
+    const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent('Kao Thai Wellness Booking Request')}&body=${encodeURIComponent(body)}`
 
     window.location.href = mailto
     setSubmitted(true)

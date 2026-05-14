@@ -16,7 +16,7 @@ export default function IntroSection() {
           </h2>
 
           <p className="text-sand-600 text-lg font-light leading-relaxed mb-6">
-            At Kao Thai Massage, we blend centuries-old Thai healing traditions with
+            At Kao Thai Wellness, we blend centuries-old Thai healing traditions with
             the mindful precision of modern wellness. Each session is crafted to
             restore balance, release tension, and renew your sense of self.
           </p>

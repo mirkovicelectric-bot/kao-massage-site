@@ -10,7 +10,7 @@ export default function MapSection() {
         {/* Map */}
         <div className="h-72 lg:h-auto min-h-[420px] relative">
           <iframe
-            title="Kao Thai Massage location"
+            title="Kao Thai Wellness location"
             src={mapsUrl}
             className="absolute inset-0 w-full h-full"
             style={{ border: 0 }}

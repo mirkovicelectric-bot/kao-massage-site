@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 const BASE_URL = 'https://kaomassage.com'
-const SITE_NAME = 'Kao Thai Massage'
+const SITE_NAME = 'Kao Thai Wellness'
 const DEFAULT_DESCRIPTION =
-  'Experience authentic Thai massage therapy in Cupertino, California. Traditional Thai, Deep Tissue, Swedish, Hot Stone, and more. Book your session at Kao Thai Massage on Stevens Creek Blvd.'
+  'Experience authentic Thai massage therapy in Cupertino, California. Traditional Thai, Deep Tissue, Swedish, Hot Stone, and more. Book your session at Kao Thai Wellness on Stevens Creek Blvd.'
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -38,7 +38,7 @@ export const defaultMetadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kao Thai Massage — Cupertino, California',
+        alt: 'Kao Thai Wellness — Cupertino, California',
       },
     ],
   },

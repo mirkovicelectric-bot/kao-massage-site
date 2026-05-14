@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import MobileNav from './MobileNav'
 const navLinks = [
@@ -24,10 +25,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const textColor =
-    isScrolled || !isHomePage ? 'text-sand-900' : 'text-white'
-  const textColorMuted =
-    isScrolled || !isHomePage ? 'text-sand-500' : 'text-white/60'
+  const onLightBg = isScrolled || !isHomePage
   const navTextColor =
     isScrolled || !isHomePage ? 'text-sand-700 hover:text-sand-900' : 'text-white/80 hover:text-white'
   const activeNavColor =
@@ -47,17 +45,15 @@ export default function Header() {
         <div className="container-max section-padding">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex flex-col items-start group">
-              <span
-                className={`font-cormorant text-2xl font-semibold tracking-[0.15em] transition-colors duration-300 ${textColor}`}
-              >
-                KAO
-              </span>
-              <span
-                className={`text-[10px] tracking-[0.25em] uppercase font-sans transition-colors duration-300 ${textColorMuted}`}
-              >
-                Thai Massage
-              </span>
+            <Link href="/" className="flex items-center group" aria-label="Kao Thai Wellness — Home">
+              <Image
+                src="/logo-mark.png"
+                alt="Kao Thai Wellness"
+                width={586}
+                height={366}
+                priority
+                className={`h-12 w-auto transition-all duration-300 ${onLightBg ? '' : 'brightness-0 invert'}`}
+              />
             </Link>
 
             {/* Desktop nav */}

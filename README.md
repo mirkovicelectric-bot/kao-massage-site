@@ -1,2 +1,2 @@
 # kao-massage-site
-Website for KAO Thai Massage in Cupertino, CA
+Website for Kao Thai Wellness in Cupertino, CA
