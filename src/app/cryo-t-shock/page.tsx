@@ -171,7 +171,7 @@ export default function CryoTShockPage() {
             <div className="relative h-80 lg:h-[520px] overflow-hidden">
               <Image
                 src="/cryo-treatment.jpg"
-                alt="Cryo T-Shock thermal therapy session in a quiet treatment room"
+                alt="Cryo T-Shock thermal device applied to a client's abdomen during a cryo slimming session at Kao Thai Wellness"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
