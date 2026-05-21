@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BOOKING_URL } from '@/lib/services'
 import type { ServiceDuration } from '@/lib/services'
 
@@ -19,15 +20,13 @@ export default function PriceTable({ durations, serviceName }: PriceTableProps) 
           </div>
           <div className="flex items-center gap-6">
             <span className="font-cormorant text-2xl text-sand-900">${price}</span>
-            <a
+            <Link
               href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               aria-label={`Book ${serviceName} – ${duration}`}
               className="text-xs eyebrow text-forest-600 border border-forest-200 px-3 py-1.5 hover:bg-forest-600 hover:text-white hover:border-forest-600 transition-all duration-200"
             >
               Book
-            </a>
+            </Link>
           </div>
         </div>
       ))}

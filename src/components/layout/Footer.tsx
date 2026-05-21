@@ -112,14 +112,12 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <a
+            <Link
               href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-block mt-6 btn-primary text-xs px-6 py-3"
             >
               Book a Session
-            </a>
+            </Link>
           </div>
         </div>
       </div>

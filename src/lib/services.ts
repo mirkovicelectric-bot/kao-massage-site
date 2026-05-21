@@ -24,7 +24,7 @@ export interface Addon {
   price: number
 }
 
-export const BOOKING_URL = 'https://www.vagaro.com/placeholder'
+export const BOOKING_URL = '/book'
 export const PHONE = '1 (408) 966-3188'
 export const EMAIL = 'bookings@kaomassage.com'
 export const ADDRESS = '20540 Stevens Creek Blvd Studio 26'

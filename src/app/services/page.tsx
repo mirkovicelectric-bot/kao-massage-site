@@ -137,14 +137,12 @@ export default function ServicesPage() {
           </div>
 
           <div className="text-center mt-12">
-            <a
+            <Link
               href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="btn-primary py-4 px-10"
             >
               Book a Session
-            </a>
+            </Link>
           </div>
         </div>
       </section>
